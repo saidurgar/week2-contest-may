@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <header>
+      <table class="topbar">
+        <tr>
+          <td><h1>Library System</h1></td>
+          <td>
+            <a class="a" href="#book"><b>Books</b></a>
+          </td>
+          <td>
+            <a class="a" href="#res"><b>Register</b></a>
+          </td>
+          <td><b>Contact Us</b></td>
+          <td><b>Layout</b></td>
+        </tr>
+      </table>
+    </header>
+
+    <!-- first section to get book details -->
+    <section class="books-details">
+      <h2 id="book">Books</h2>
+      <table
+        cellpadding="15px"
+        cellspacing="0"
+        border="1px"
+        class="table-of-details"
+      >
+        <h2>Books</h2>
+        <tr>
+          <th>Book ID</th>
+          <th>Tittle</th>
+          <th>Author</th>
+          <th>Genre</th>
+          <th>Avalable</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>
+            <a href="#">Hidden Treasure Inside You</a>
+            <table cellspacing="0" border="1px">
+              <tr>
+                <td>Publication Date:2010</td>
+              </tr>
+              <tr>
+                <td>Page count:19</td>
+              </tr>
+              <tr>
+                <td>ISBN:12386678</td>
+              </tr>
+            </table>
+          </td>
+          <td>Shivham kumar</td>
+          <td>horror</td>
+          <td>Availabe</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>
+            <a href="#">The Monk</a>
+            <table cellspacing="0" border="1px">
+              <tr>
+                <td>Publication Date:2009</td>
+              </tr>
+              <tr>
+                <td>Page count:120</td>
+              </tr>
+              <tr>
+                <td>ISBN:12345678</td>
+              </tr>
+            </table>
+          </td>
+          <td>ranjan yadav</td>
+          <td>comedy</td>
+          <td>Available</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>
+            <a href="#">History of The Fort</a>
+            <table cellspacing="0" border="1px">
+              <tr>
+                <td>Publication Date:2000</td>
+              </tr>
+              <tr>
+                <td>Page count:160</td>
+              </tr>
+              <tr>
+                <td>ISBN:12345678</td>
+              </tr>
+            </table>
+          </td>
+          <td>Adarsh Shrama</td>
+          <td>comdey</td>
+          <td>Available</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>
+              <a href="#">Rich Man</a>
+              <table cellspacing="0" border="1px">
+                <tr>
+                  <td>Publication Date: 2009</td>
+                </tr>
+                <tr>
+                  <td>Page count:150</td>
+                </tr>
+                <tr>
+                  <td>ISBN:123-4567890458</td>
+                </tr>
+              </table>
+            </td>
+            <td>R. Kapoor</td>
+            <td>comdey</td>
+            <td>Available</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>
+              <a href="#">Power of the Machine</a>
+              <table cellspacing="0" border="1px">
+                <tr>
+                  <td>Publication Date: 2005</td>
+                </tr>
+                <tr>
+                  <td>Page count:300</td>
+                </tr>
+                <tr>
+                  <td>ISBN:123-4567890456</td>
+                </tr>
+              </table>
+            </td>
+            <td>M.G. Kohli</td>
+            <td>shortstory</td>
+            <td>Available</td>
+          </tr>
+      </table>
+    </section>
+
+    <!-- second section to fill the registration form -->
+    <section class="registration-from" id="res">
+      <form method="post">
+        <h2 id="res">Register</h2>
+        <label for="fname"><b>First Name:</b></label>
+        <br />
+        <input type="text" id="fname" name="fname" required />
+
+        <br />
+
+        <label for="lname"><b>Last Name:</b></label>
+        <br />
+        <input type="text" id="lname" name="lname" required />
+
+        <br />
+
+        <label for="dob"><b>Date Of Birth:</b></label>
+        <br />
+        <input type="date" id="dob" name="dob" required />
+
+        <br />
+
+        <label for="age"><b>Age</b></label>
+        <br />
+        <input type="number" id="age" name="age" min="5" max="100" />
+
+        <br />
+
+        <label for="email"><b>Email:</b></label>
+        <br />
+        <input type="email" id="email" required />
+
+        <br />
+
+        <label for="password"><b>Password:</b></label>
+        <br />
+        <input type="password" id="password" pattern=".{6,}" required />
+
+        <br />
+
+        <label for="confirm-password"><b>Confirm Password:</b></label>
+        <br />
+        <input type="password" id="confirm-password" pattern=".{6,}" required />
+
+        <br />
+
+        <input id="register-btn" type="submit" value="Register" />
+
+        <br />
+      </form>
+    </section>
+  </body>
+</html>
